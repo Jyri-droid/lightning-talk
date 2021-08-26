@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    .fancyButtonContainer {
+        width: 12rem;
+        display: flex;
+        background-color: grey;
+        color: black;
+    }
+    .expandingPlus {
+        width: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        transition: .5s;
+    }
+    button {
+        padding: 1rem;
+        width: 100%;
+    }
+    .fancyButtonContainer:hover .expandingPlus {
+        width: 2rem;
+    }
+</style>
+</head>
+<body>
+    <div class="fancyButtonContainer">
+        <div class="expandingPlus">+</div>
+        <button>I am a fancy button</button>
+    </div>
+</body>
+<script>
+// Place your JS here
+</script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Flexbox layout instructor</title>
+	<meta name="author" content="Jyri Konttinen">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="flexboxExtraCss.css">
+<style>
+    .mainContainer {
+        height: calc(100vh - 2rem);
+        display: flex;
+    }
+    .leftOfPage {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+    }
+    .header {
+        flex: 1;
+    }
+    .columnContainer {
+        flex: 2;
+        display: flex;
+    }
+    .columns {
+        flex: 1;
+    }
+    .sidebar {
+        flex: 1;
+    }
+</style>
+</head>
+<body>
+    <div class="mainContainer">
+        <p>My direct children flex horizontally</p>
+        <div class="leftOfPage">
+            <p>I flex horizontally 2 parts + My direct children flex vertically</p>
+            <div class="header">
+                <p>I flex vertically 1 part</p>
+                <h1>Header</h1>
+            </div>
+            <div class="columnContainer">
+                <p>I flex vertically 2 parts + My direct children flex horizontally</p>
+                <div class="columns"><p>I flex horizontally 1 part</p><h1>Column</h1></div>
+                <div class="columns"><p>I flex horizontally 1 part</p><h1>Column</h1></div>
+                <div class="columns"><p>I flex horizontally 1 part</p><h1>Column</h1></div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <p>I flex horizontally 1 part</p><h1>Sidebar</h1>
+        </div>
+    </div>
+    <div class="buttonContainer">
+        <button class="material-icons" id="buttonOriginalText">info</button>
+        <button class="material-icons" id="buttonAltText" style="opacity: .5;">code</button>
+    </div>
+</body>
+<script src="flexboxJS.js"></script>
+</html>

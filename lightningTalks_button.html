@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    .allDivsLikeThis {
+        background-color: white;
+        color: black;
+    }
+</style>
+</head>
+<body>
+    <button class="allDivsLikeThis" id="thisDiv">Click me</button>
+</body>
+<script>
+    document.getElementById("thisDiv").addEventListener("click", function() {
+        document.getElementById("thisDiv").innerHTML = "I was clicked";
+    })
+</script>
+</html>

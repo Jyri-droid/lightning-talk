@@ -1,0 +1,79 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 0.5rem;
+}
+body div {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+.mainContainer, .leftOfPage, .columnContainer {
+    border: 1px solid mediumPurple;
+    color: mediumPurple;
+
+}
+.header, .sidebar, .columns {
+    border: 2px solid darkSlateBlue;
+    color: darkSlateBlue;
+}
+p {
+    position: absolute;
+    margin-top: -1.2rem;
+    background-color: white;
+    font-size: 0.75rem;
+    padding: 0.25rem;
+    transition: font-size .5s;
+}
+h1 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    transition: font-size .5s;
+}
+.buttonContainer {
+    width: 2.75rem;
+    height: 5rem;
+    background-color: mediumPurple;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    position: absolute;
+    top: calc(50vh - 2.5rem);
+    right: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    transition: transform .2s;
+}
+button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+@media only screen and (max-width: 1200px) {
+    p {
+        font-size: 0.5rem;
+    }
+}
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 0.75rem;
+    }
+    p, button, .buttonContainer {
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 0.35rem;
+    }
+}
