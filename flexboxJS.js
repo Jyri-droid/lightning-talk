@@ -25,15 +25,15 @@
         for (j = 0; j < allParagraphs.length; j++) {
             allParagraphs[j].innerHTML = originalText[j];
         }
-        document.getElementById("buttonOriginalText").style.opacity = "1";
-        document.getElementById("buttonAltText").style.opacity = ".5";
+        document.getElementById("buttonOriginalText").disabled = true;
+        document.getElementById("buttonAltText").disabled = false;
     }
     function showAltText() {
         for (k = 0; k < allParagraphs.length; k++) {
             allParagraphs[k].innerHTML = altText[k];
         }
-        document.getElementById("buttonOriginalText").style.opacity = ".5";
-        document.getElementById("buttonAltText").style.opacity = "1";
+        document.getElementById("buttonOriginalText").disabled = false;
+        document.getElementById("buttonAltText").disabled = true;
     }
     // Make buttons change text when clicked
     document.getElementById("buttonOriginalText").addEventListener("click", showOriginalText);

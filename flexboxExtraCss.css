@@ -14,8 +14,8 @@ body div {
     overflow: hidden;
 }
 .mainContainer, .leftOfPage, .columnContainer {
-    border: 1px solid mediumPurple;
-    color: mediumPurple;
+    border: 1px solid lightSeaGreen;
+    color: lightSeaGreen;
 
 }
 .header, .sidebar, .columns {
@@ -26,7 +26,7 @@ p {
     position: absolute;
     margin-top: -1.2rem;
     background-color: white;
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     padding: 0.25rem;
     transition: font-size .5s;
 }
@@ -36,9 +36,9 @@ h1 {
     transition: font-size .5s;
 }
 .buttonContainer {
-    width: 2.75rem;
+    width: 3rem;
     height: 5rem;
-    background-color: mediumPurple;
+    background-color: lightSeaGreen;
     border: none;
     border-radius: 5px 0 0 5px;
     position: absolute;
@@ -54,8 +54,13 @@ button {
     background-color: transparent;
     border: none;
     transition: transform .2s;
+    opacity: .5;
 }
-button:hover {
+button:disabled {
+    opacity: 1;
+}
+button:hover:not([disabled]) {
+    opacity: 1;
     transform: scale(1.2);
     cursor: pointer;
 }
